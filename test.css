@@ -1,0 +1,358 @@
+/*** body style **/
+html{
+	height: 90%;
+	}
+
+  body{
+    margin: auto;
+    width: 95%;
+    margin-top: 30px;
+    margin-left:0 px;
+    background-color: rgb(26, 27, 25);
+    min-height:100%;
+}
+/* Image float - text around image */
+#banner{
+    float: left;
+    width: 60%;
+    padding: 15px;
+}
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+.main {
+  margin-left: 0px;
+  padding: 0px 20px;
+}
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/***layout in page**/
+*{
+    box-sizing: border-box;
+}
+.header, .footer{
+	background-color: rgb(22, 20, 16);
+	font-family: 'Open sans', sans-serif;
+	color: rgb(24, 34, 34);
+	padding: 10px;
+	font-size: 10px;
+}
+.column {
+	float: left;
+	padding: 0px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.clearfix::after {
+	content:"";
+	clear: both;
+	display: table
+}
+/***left menu**/
+.menu{
+	width: 20%;
+	font-family: 'Open sans', sans-serif;
+}
+.content {
+	width: 70%;
+}
+
+.menu ul {
+	list-style-type: none;
+	margin: 4px;
+	padding:10px;
+	font-size: 18px;
+  font-family: 'Open sans', sans-serif;
+}
+.menu ul:hover{
+	color: rgb(13, 13, 172); 
+  	background-color: transparent;
+  	text-decoration: none;
+  }
+.menu li {
+	list-style-type: none;
+	padding: 8px;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+.menu li:hover{
+	color: rgb(14, 17, 97); 
+  	background-color: transparent;
+  	text-decoration: none;
+  }
+h1 { 
+    font-weight: 200; 
+    font-size: 27px; 
+    font-style: oblique;
+    text-align: left;
+    line-height: 120%; 
+    font-family: 'Open sans', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+h2 {
+    font-weight: 200; 
+    font-size: 23px; 
+    text-align: left;
+    line-height: 90%; 
+    font-family: 'Open sans', sans-serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h3{
+    font-weight: 300; 
+    font-size: 18px; 
+    text-align: left;
+    line-height: 125%; 
+    font-family: 'Open sans', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}    
+p { 
+    font-family: 'Open sans', sans-serif; 
+    color: darkslategrey; 
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 150%;
+    padding-left: 0px;
+    padding-right: 0px;
+    align-content: center;
+}
+.emph {
+	font-weight: 400; 
+	}
+
+    /***links**/
+a:link {
+  color: rgb(45, 90, 240);
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+    color: rgb(45, 90, 240); 
+    text-decoration: none;
+    text-decoration-color: none;
+}
+/***image layouts ***/
+.myimage {
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+    float: right;
+    padding-right: 50px;
+}
+.container {
+  position: relative;
+  text-align: left;
+}
+.left {
+	position: absolute;
+	margin: auto;
+	left: 5%;
+	font-size: 18px;
+	color: #0099cc; 
+}
+.center {
+  position: absolute;
+  margin-top: 0%;
+  margin-left:40px;
+  font-size: 18px;
+  color: #0099cc; 
+  text-decoration: none;
+  text-decoration-color: darkslategrey;
+}
+
+/*** wrapper */
+.collapsible {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: 'Open sans', sans-serif; 
+  background-color: floralwhite;
+  color: darkslategrey; 
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 150%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.active, .collapsible:hover {
+	color: #0099cc; 
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  float: right;
+  font-size: 10px;
+  font-weight: 300;
+  padding-left: 5px;
+  padding-right: 0px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+  float: right;
+  font-size: 10px;
+  font-weight: 300;
+  padding-left: 5px;
+  padding-right: 0px;
+
+}
+
+/**** tree menus */
+#myUL {
+	list-style: none; /* Remove list bullets */
+  padding: 0;
+  margin: 0;
+  font-family: 'Open sans', sans-serif; 
+	color: darkslategrey; 
+	font-size: 16px;
+	font-weight: 200;
+	line-height: 175%;
+	padding-left: 0px;
+	padding-right: 0px;
+	margin-top: 10px;
+	align-content: center;
+}
+
+li:before {
+  content: "-"; /* Insert content that looks like bullets */
+  padding-right: 4px;
+  color: darkslategrey; /* Or a color you prefer */
+  margin: 5px;
+  margin-top: 10px;
+}
+
+
+.caret {
+  cursor: pointer;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none;
+}
+
+.caret::before {
+  content: "\25B6";
+  color: #0099cc;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.caret-down::before {
+  -ms-transform: rotate(90deg); /* IE 9 */
+  -webkit-transform: rotate(90deg); /* Safari */'
+  transform: rotate(90deg);  
+}
+
+.nested {
+  display: none;
+  list-style: none; /* Remove list bullets */
+  margin: 0px;
+}
+
+.active {
+  display: block;
+}
+/*************************/
+/*** Slideshow images ***/
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 50%;
+  position: relative;
+  float: left;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  font-family: 'Open sans', sans-serif;
+	color: darkslategrey;
+  font-size: 15px;
+  padding: 5px 0px;
+  position: relative;
+  bottom: 0px;
+  text-align: justify;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: floralwhite;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: relative;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: none;
+  height: 0px;
+  width: 0px;
+  margin: 0 0px;
+  background-color: transparent;
+  border-radius: 0%;
+  display: table;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: transparent; /*because I don't know how to make them invisible otherwise :S 
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html style="background-color: #e8eaf3">
+
+    <head>
+        <meta charset="UTF-8">
+        <link href="style.css" rel="stylesheet" type="text/css" media="all">
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <nav>
+                    <ul> 
+                        <li><a class="current_page_item"><a href="index.html"> Home</a></li>
+                        <li><a href="Investigación.html">Investigación</a></li>
+                        <li><a href="Cursos.html">Cursos</a></li>
+                        <li><a href="Eventos.html">Eventos/Seminarios</a></li>
+                        <li><a href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0001458142">Cvlac </a></li>
+                </nav>
+            </div>
+        </header>
+
+        <div class="column content">
+            <h1>Cursos</h1>
+                <p> Este 2022 se dictó los cursos de Cálculo Vectorial, Matemáticas Especiales y Análisis Numérico </p>
+                <button type="button" class="collapsible" id="past_teaching">
+                        Cursos anteriores
+                </button>
+                <ul style="display:none; overflow:hidden" id="myUL">
+                    <li><a href="https://classroom.google.com/u/1/c/MTQ0MjEyNjQzNzky">Matemáticas Especiales, 2022</a></li>
+                    <li> <a href="https://classroom.google.com/u/1/c/MTY0NDc1MjAyMFpa">Cálculo Vectorial, 2022</a></li>
+                    <li> <a href="https://classroom.google.com/u/1/c/MzYyNTcyMTM3NjU2">Análisis Numérico, 2022</a></li>
+                    <li> Cálculo Integral, 2018</li>
+                    <li> Cálculo Diferencial, 2018</li>
+                    <li> Estimación e Inferencia, 2018</li>
+                    <li> Procesos Estocásticos, 2018</li>
+                    <li> Probabilidad, 2018</li>
+                    <li> Modelación de demanda de Transporte, 2018/li>
+                </ul>
+            
+                <hr style="margin-top:30px;;margin-bottom:30px">
+            <h1>Videos</h1>
+                <ul id="myUL">
+                  <span class="caret" >Matemáticas <!--</a>-->
+                      </span>
+                    <ul class="nested">
+                        <li><a href="https://drive.google.com/open?id=1IEp0He89JfYwc4tRbzTH7eWsSs6AXvxW">Leyes</a></li>
+                    </ul>
+            
+                    <hr style="margin-top:30px;margin-bottom:30px">
+                </ul>
+            <h1>Notas de Clase</h1>
+                  <ul id="myUL">
+                <span class="caret" >Matemáticas Especiales <!--</a>-->
+                      </span>
+                    <ul class="nested">
+                        <li><a href="files/MATH411_S20.pdf">Matemáticas Especiales</a> 2020</li>
+                    </ul>
+                </ul>
+            <hr style="margin-top:50px;margin-bottom:30px">
+           </div>
+    </div>
+            
+    <div class="footer">
+        <p class="Copyright">
+            Copyrigth 2023</p>
+    </div>
+    
+    <script>
+    var toggler = document.getElementsByClassName("caret");
+    var i;
+    
+    for (i = 0; i < toggler.length; i++) {
+      toggler[i].addEventListener("click", function() {
+        this.parentElement.querySelector(".nested").classList.toggle("active");
+        this.classList.toggle("caret-down");
+      });
+    }
+    
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+        
+    </body>
+    <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</html>
