@@ -42,18 +42,28 @@ nav a {
    display:flex;
     align-items:flex-start;
     gap:40px;
-    padding:30px 0;
+    padding:40px 0;
 }
 
 .foto{
-    flex:0 0 260px;
+    flex:0 0 280px;
 }
 
 .foto img {
   width: 100%;
-  height:auto;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display:block;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+.descripcion{
+    flex:1;
+}
+
+.descripcion h1{
+    margin:0 0 25px 0;
+    font-size:3rem;
+    line-height:1.15;
 }
 
 .descripcion p{
