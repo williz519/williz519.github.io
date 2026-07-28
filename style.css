@@ -74,6 +74,27 @@ nav a {
   font-size:1rem;
 }
 
+.academic-links{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    margin-top:25px;
+    padding-top:18px;
+    border-top:1px solid #d9d9d9;
+}
+
+.academic-links a{
+    color:#003366;
+    text-decoration:none;
+    font-size:0.95rem;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.academic-links a:hover{
+    color:#0056b3;
+}
+
 .contacto {
   padding: 20px 0;
   background-color: #f9f9f9;
