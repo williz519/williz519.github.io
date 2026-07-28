@@ -46,16 +46,19 @@ nav a {
 }
 
 .foto{
-    flex:0 0 320px;
+    flex:0 0 300px;
+    display:flex;
+    justify-content:flex-start;
+    align-items:flex-start;
 }
 
 .foto img {
-  width: 320px;
-  height:420px;
+  width: 300px;
+  height:410px;
   display:block;
   object-fit:cover;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.20);
+  box-shadow: 0 8 18px rgba(0,0,0,0.18);
 }
 
 .descripcion{
@@ -64,8 +67,9 @@ nav a {
 
 .descripcion h1{
     margin:0 0 18px 0;
-    font-size:3rem;
-    line-height:1.05;
+    font-size:2.3em;
+    font-weight:700;
+    line-height:1.15;
 }
 
 .descripcion p{
