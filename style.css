@@ -65,6 +65,18 @@ nav a {
   margin-top: 20px;
 }
 
+.congresos {
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.congresos li {
+    margin-bottom: 18px;   /* Espacio entre congresos */
+    line-height: 1.7;      /* Espaciado entre líneas */
+    text-align: justify;   /* Justificar texto */
+}
+
+
 footer {
   text-align: center;
   background-color: #003366;
