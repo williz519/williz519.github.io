@@ -39,21 +39,22 @@ nav a {
 }
 
 .perfil-container {
-   display:flex;
-    align-items:flex-start;
-    gap:40px;
-    padding:40px 0;
+  display:flex;
+  align-items:flex-start;
+  gap:40px;
+  padding:40px 0;
 }
 
 .foto{
-    flex:0 0 280px;
+    flex:0 0 320px;
 }
 
 .foto img {
-  width: 100%;
+  width: 320px;
+  height:auto;
   display:block;
   border-radius: 10px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
 }
 
 .descripcion{
@@ -61,15 +62,16 @@ nav a {
 }
 
 .descripcion h1{
-    margin:0 0 25px 0;
+    margin:0 0 20px 0;
     font-size:3rem;
     line-height:1.15;
 }
 
 .descripcion p{
-    text-align: justify;
-    margin-bottom: 18px;
-    line-height: 1.7;
+  margin:0 0 18px 0;
+  text-align: justify;
+  line-height:1.8;
+  font-size:1.15rem;
 }
 
 .contacto {
