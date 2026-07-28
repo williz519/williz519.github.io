@@ -46,12 +46,12 @@ nav a {
 }
 
 .foto{
-    flex:0 0 330px;
+    flex:0 0 320px;
 }
 
 .foto img {
-  width: 330px;
-  height:430px;
+  width: 320px;
+  height:420px;
   display:block;
   object-fit:cover;
   border-radius: 10px;
