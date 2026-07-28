@@ -62,16 +62,16 @@ nav a {
 }
 
 .descripcion h1{
-    margin:0 0 20px 0;
+    margin:0 0 18px 0;
     font-size:3rem;
     line-height:1.15;
 }
 
 .descripcion p{
-  margin:0 0 18px 0;
+  margin:0 0 16px 0;
   text-align: justify;
   line-height:1.8;
-  font-size:1.15rem;
+  font-size:1rem;
 }
 
 .contacto {
